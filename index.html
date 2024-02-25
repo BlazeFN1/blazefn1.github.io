@@ -11,30 +11,25 @@
 </head>
 <body>
    
-    <video id="bg-video" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+    <video id="bg-video">
         <source src="Download.mp4" type="video/mp4">
     </video>
 
     <div class="fullscreen-modal">
         <div class="modal__content">
             <div class="modal__header">
-                <h2>Welcome to BlazeFN</h2>
-                <p>Please click "Continue" to proceed</p>
             </div>
             <div class="modal__footer">
-                <button onclick="playVideo()" class="btn">Continue</button>
+                <img src="https://cdn.discordapp.com/attachments/1205329155546415175/1211370066487283712/standard.gif?ex=65edf34a&is=65db7e4a&hm=e47404bd60b12871089378ee985eafc19dd5ec1fe53ecf920e68aa0a44583ec2&" alt="" class="userLayout1_avatar__gzsqE false">
+                <button onclick="playVideo()" class="btn">click to enter...</button>
+              
             </div>
         </div>
     </div>
   
     <div id="particles-js"></div>
-    <div class="center" style="display:none;">
-        <h1 onclick="playVideo()">Hi</h1>
-        <p>It is a OGFN server fun and working servers. So what are you waiting for? Join Now!</p>
-        <div class="btn">
-            <a href="https://discord.gg/RXZPzQ46np" class="btns"><i class="fab fa-discord"></i> Discord</a>
-        </div>
-    </div>
+    <div class="center">
+
 
 
     <script src="assets/js/titlechange.js"></script>
@@ -44,17 +39,19 @@
     <script src="https://kit.fontawesome.com/9105e9014d.js" crossorigin="anonymous"></script>
 
     <script>
-        // Function to play the video
+        
         function playVideo() {
             var video = document.getElementById('bg-video');
             video.play();
-            // Hide the modal after the video starts playing
+         
             document.querySelector('.fullscreen-modal').style.display = 'none';
-            // Show the website content after the video ends
+          
             video.onended = function() {
                 document.querySelector('.center').style.display = 'block';
+        
+                window.location.href = 'https://discord.gg/8yVGJGsQ99';
             };
-            // Hide the button after clicking
+           
             document.querySelector('.modal__footer').style.display = 'none';
         }
     </script>
