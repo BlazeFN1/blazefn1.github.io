@@ -1,54 +1,54 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-    <meta content="About BlazeFN" property="og:title" />
-    <meta content="BlazeFN Website" property="og:description" />
-    <meta content="#6666ff" data-react-helmet="true" name="theme-color" />
-
-    <script src="assets/js/titlechange.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlazeFN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/particles.css" media="screen" rel="stylesheet">
-
-    <link rel="icon" type="image/x-icon" href="assets\images\standard.gif">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="assets/images/standard.gif">
 </head>
 <body>
-
-</video>
-<div id="particles-js"></div>
-
-<div class="modal" ="modal">
-    <div class='modal__container'>
+   
+    <div class="fullscreen-modal">
         <div class="modal__content">
+            <div class="modal__header">
+                <h2>Welcome to BlazeFN</h2>
+                <p>Please authorize with Discord to continue</p>
+            </div>
+            <div class="modal__footer">
+                <a href="#" onclick="authorizeWithDiscord()" class="btn">Authorize with Discord</a>
+            </div>
         </div>
-        <i id="close" class="fas fa-times" style="font-size: 250rem; transform: translateY(-1700px) translateX(1200px); opacity: 0;" onclick="nigg(); t1();"></i>
     </div>
-</div>
 
-</script>
-<div class="center">
-    <h1>BlazeFN</h1>
-    <p></p>
-    <p class="skush">it is a OGFN server fun and working servers</p>
-    <p class="skush">So what are you waiting for join Now</p>
-    <div class="btn">
-        <a href="https://discord.gg/RXZPzQ46np"><p class="btns"><i class="fa-brands fa-discord"></i> Discord</p></a>
+  
+    <div id="particles-js"></div>
+    <div class="center">
+        <h1>BlazeFN</h1>
+        <p>It is a OGFN server fun and working servers. So what are you waiting for? Join Now!</p>
+        <div class="btn">
+            <a href="https://discord.gg/RXZPzQ46np" class="btns"><i class="fab fa-discord"></i> Discord</a>
+        </div>
     </div>
-</div>
-</div>
+
+
+    <script src="assets/js/titlechange.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/9105e9014d.js" crossorigin="anonymous"></script>
+
+    <script>
+        function authorizeWithDiscord() {
+            // Redirect the user to the Discord authorization URL
+            window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=1187564478565453926&redirect_uri=https%3A%2F%blazefn1.github.io/callback%2Fauth%2Fcallback&response_type=code&scope=identify&guild_id=1205287970719006840';
+            // Replace YOUR_CLIENT_ID with your actual Discord application's client ID
+            // Replace https%3A%2F%2Fyourdomain.com%2Fauth%2Fcallback with your actual callback URL (URL encoded)
+            // Make sure to include the guild_id parameter with the ID of the Discord server you want to check membership against
+        }
+    </script>
+
 </body>
-
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/particles.js"></script>
-<script src="assets/js/app.js"></script>
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/9105e9014d.js"></script>
-
 </html>
